@@ -5,9 +5,9 @@
 string[] threeCharArray(string[] array)
 {
     string[] threeCharArray = new string[array.Length];
+    int index = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        int index = 0;
         if (array[i].Length <= 3)
         {
             threeCharArray[index] = array[i];
@@ -21,7 +21,7 @@ void printArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] != "") System.Console.WriteLine(array[i]);
+        if (array[i] != null) System.Console.WriteLine(array[i]);
     }
 }
 
